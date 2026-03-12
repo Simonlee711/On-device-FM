@@ -1,16 +1,11 @@
-![python](https://img.shields.io/badge/-Python_3.12-blue?logo=python&logoColor=white)
-[![arXiv](https://img.shields.io/badge/arXiv-2510.25785-red.svg)](https://arxiv.org/abs/2510.25785)
-[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ulzee/raptor-private/pulls)
-[![license](https://img.shields.io/badge/License-BSD-blue.svg)](https://github.com/Simonlee711/HiMAE/blob/main/LICENSE)
-[![release](https://img.shields.io/badge/Release-v0.1.0-blue.svg)](https://github.com/Simonlee711/HiMAE/releases/tag/v0.1.0)
-
 # <center> 🔎 HiMAE: Hierarchical Masked Auto Encoders 🔍 </center>
 
-![raptor-banner](https://github.com/Simonlee711/HiMAE/blob/main/img/heatmap-himae.png?raw=true)
+### On-device foundation models enable real-time population-scale detection of clinical events on wearable devices
 
-**[ICLR 2026]** HiMAE: Hierarchical Masked Autoencoders Discover Resolution-Specific Structure in Wearable Time Series
+**Authors:** [Simon A. Lee](https://simon-a-lee.github.io), Hao Zhou, Minji Han, Rachel Choi, Cyrus Tanade ,Md Sazzad Hissain Khan, 
+Juhyeon Lee, Li Zhu, Md Mahbubur Rahman, Viswam Nathan, Mehrab Bin Morshed, Migyeong 
+Gwak, Keum San Chun, Jeffrey N. Chiang, Sharanya Arcot Desai
 
-**Authors:** [Simon A. Lee](https://simon-a-lee.github.io), Cyrus Tanade, Hao Zhou, Juhyeon Lee, Megha Thukral, Minji Han, Rachel Choi, Md Sazzad Hissain Khan, Baiying Lu, Migyeong Gwak, Mehrab Bin Morshed, Viswam Nathan, Md Mahbubur Rahman, Li Zhu, Subramaniam Venkatraman, Sharanya Arcot Desai
 
 ---
 
@@ -110,31 +105,6 @@ These values reflect a highly imbalanced binary task and a deliberately minimal 
 The repository is intentionally modular. To adapt to new tasks, point the metadata to your HDF5 shards, adjust `sampling_freq` and `seg_len` accordingly, and keep the masked reconstruction loss unchanged. The bottleneck dimensionality is 256 by default; if you change the encoder channels, update the probe input size to match. For longer segments, consider proportionally increasing the depth to keep the bottleneck time resolution reasonable after stride‑2 downsamples.
 
 ---
-
-## BibTeX
-
-If this code is useful in your work, please cite our work below:
-
-`ICLR`
-```
-@inproceedings{lee2025himae,
-  title={HiMAE: Hierarchical Masked Autoencoders Discover Resolution-Specific Structure in Wearable Time Series},
-  author={Lee, Simon A and Tanade, Cyrus and Zhou, Hao and Lee, Juhyeon and Thukral, Megha and Khan, Md Sazzad Hissain and Lu, Baiying and Gwak, Migyeong and others},
-  booktitle={The Fourteenth International Conference on Learning Representations},
-  year={2026},
-  url={https://openreview.net/forum?id=iPAy5VpGQa}
-}
-```
-
-`arxiv`
-```
-@article{lee2025himae,
-  title={HiMAE: Hierarchical Masked Autoencoders Discover Resolution-Specific Structure in Wearable Time Series},
-  author={Lee, Simon A and Tanade, Cyrus and Zhou, Hao and Lee, Juhyeon and Thukral, Megha and Han, Minji and Choi, Rachel and Khan, Md Sazzad Hissain and Lu, Baiying and Gwak, Migyeong and others},
-  journal={arXiv preprint arXiv:2510.25785},
-  year={2025}
-}
-```
 
 ## Acknowledgements
 
